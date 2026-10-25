@@ -1,0 +1,25 @@
+{
+  "id": "library-map",
+  "title": "Feature clip: the library map (~14s)",
+  "voice": { "voice": "am_michael", "speed": 1.15 },
+  "music": { "track": "drive", "volume": 0.2 },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": ["Which old YouTube videos", "deserve a second chance?"],
+      "accent": [1],
+      "vo": "Which of your old YouTube videos deserve a second chance?"
+    },
+    {
+      "type": "map",
+      "focus": "hidden_gem",
+      "focusAt": "@Hidden",
+      "vo": "Backsurge plots every video by views and engagement. Hidden gems are loved, but hard to find. Give them a new title or thumbnail."
+    },
+    {
+      "type": "end",
+      "headline": "Find your hidden gems.",
+      "vo": "Find yours free, at backsurge dot com."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "slice-hidden-gems",
+  "title": "The 4 types, part 1: hidden gems (~45s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "chill",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Hidden gems",
+      "lines": [
+        "Your best YouTube video",
+        "might be one nobody saw."
+      ],
+      "accent": [
+        1
+      ],
+      "visual": "map",
+      "focus": "hidden_gem",
+      "vo": "Your best YouTube video might be one almost nobody saw."
+    },
+    {
+      "type": "map",
+      "title": "Views × engagement",
+      "groupsAt": "@four",
+      "vo": "Here's how to find it. Put every video on a chart. Views per day this way, likes, comments and shares per view that way. You get four groups."
+    },
+    {
+      "type": "quadrant",
+      "transition": "cut",
+      "cluster": "hidden_gem",
+      "meaning": "Loved, but hardly anyone finds it.",
+      "fixes": [
+        {
+          "text": "New title with search words",
+          "at": "@title"
+        },
+        {
+          "text": "Thumbnail you can read small",
+          "at": "@thumbnail"
+        },
+        {
+          "text": "One change, then wait",
+          "at": "@wait"
+        }
+      ],
+      "vo": "Top left are your hidden gems. The people who find them love them, so the video's fine. It's the packaging. Try a new title, with the words people actually type into search. Or a thumbnail you can read at phone size. Then wait."
+    },
+    {
+      "type": "text",
+      "kicker": "The rule",
+      "title": "One change. Two weeks.",
+      "subtitle": "Swap the title and thumbnail on the same day and you'll never know which one worked.",
+      "vo": "One change at a time, and give it two weeks. Swap the title and the thumbnail on the same day and you'll never know which one did it."
+    },
+    {
+      "type": "dashboard",
+      "page": "video",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "form",
+          "enter": "rise"
+        },
+        {
+          "at": "@tracks",
+          "focus": "form+history"
+        }
+      ],
+      "beats": {
+        "type": 0.2,
+        "submit": "@tracks"
+      },
+      "vo": "If you'd rather not do this by hand, Backsurge draws the map for you, and tracks the change."
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardA-table",
+          "enter": "rise"
+        },
+        {
+          "at": "@worked",
+          "focus": "cardA-verdict"
+        }
+      ],
+      "beats": {
+        "click": -2,
+        "ff": 0.1,
+        "verdict": "@worked"
+      },
+      "vo": "Two weeks later, you know if it worked."
+    },
+    {
+      "type": "end",
+      "headline": "Next: the opposite problem.",
+      "vo": "Next one's the opposite problem. Follow so you don't miss it.",
+      "follow": true,
+      "kicker": "",
+      "cta": "Follow for part 2"
+    }
+  ]
+}

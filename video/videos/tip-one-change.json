@@ -1,0 +1,28 @@
+{
+  "id": "tip-one-change",
+  "title": "Social tip + follow CTA (~12s)",
+  "formats": ["vertical", "square"],
+  "voice": { "voice": "am_michael", "speed": 1.15 },
+  "music": { "track": "chill", "volume": 0.22 },
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "YouTube tip",
+      "lines": ["Stop changing", "everything at once."],
+      "accent": [1],
+      "vo": "YouTube tip: stop changing everything at once."
+    },
+    {
+      "type": "text",
+      "title": "One change at a time.",
+      "subtitle": "New title and new thumbnail on the same day? You'll never know which one worked.",
+      "vo": "New title and new thumbnail on the same day? You'll never know which one worked. Change one thing, wait two weeks, then decide."
+    },
+    {
+      "type": "end",
+      "follow": true,
+      "headline": "More tips for your YouTube back catalog",
+      "vo": "Follow for more."
+    }
+  ]
+}

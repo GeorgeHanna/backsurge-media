@@ -1,0 +1,83 @@
+{
+  "id": "slice-wide-reach",
+  "title": "The 4 types, part 2: wide reach (~33s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "chill",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Wide reach",
+      "lines": [
+        "People click.",
+        "Then they leave."
+      ],
+      "accent": [
+        1
+      ],
+      "visual": "retention",
+      "vo": "People click your YouTube video. Then they leave."
+    },
+    {
+      "type": "quadrant",
+      "cluster": "wide_reach",
+      "meaning": "Lots of clicks. Not much love.",
+      "fixes": [
+        {
+          "text": "Find the drop",
+          "at": "@drop"
+        },
+        {
+          "text": "Cut the slow intro",
+          "at": "@cut"
+        },
+        {
+          "text": "Pay off the title fast",
+          "at": "@promised"
+        }
+      ],
+      "vo": "These are your wide reach videos. The title and thumbnail are doing their job. The video isn't keeping the promise. Open the retention graph and find the drop. Usually it's a slow intro, so cut it. And get to what the title promised, fast."
+    },
+    {
+      "type": "text",
+      "kicker": "Bonus",
+      "title": "Add chapters.",
+      "subtitle": "People skip to the part they came for, instead of leaving.",
+      "vo": "And add chapters, so people skip to the part they came for, instead of leaving."
+    },
+    {
+      "type": "dashboard",
+      "page": "video",
+      "form": "manual",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "form",
+          "enter": "rise"
+        },
+        {
+          "at": "@watch",
+          "focus": "form+history"
+        }
+      ],
+      "beats": {
+        "type": 0.3,
+        "submit": "@tracks"
+      },
+      "vo": "Then log it in Backsurge. It tracks stuff like chapters too, and shows you if watch time actually went up."
+    },
+    {
+      "type": "end",
+      "headline": "Next: no views, no love.",
+      "vo": "Next up, the videos with no views and no love. Follow for that one.",
+      "follow": true,
+      "kicker": "",
+      "cta": "Follow for part 3"
+    }
+  ]
+}

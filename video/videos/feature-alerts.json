@@ -1,0 +1,69 @@
+{
+  "id": "feature-alerts",
+  "title": "Feature: change alerts (~17s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "pulse",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "You changed a YouTube title",
+        "on your phone."
+      ],
+      "accent": [
+        1
+      ],
+      "vo": "You change a YouTube title on your phone. Late at night, half asleep."
+    },
+    {
+      "type": "dashboard",
+      "page": "overview",
+      "seconds": 3.3,
+      "shots": [
+        {
+          "at": 0,
+          "focus": "tracking",
+          "enter": "rise"
+        }
+      ],
+      "edit": {
+        "at": 0.1,
+        "out": 2.9,
+        "old": "My lighting setup",
+        "new": "How I light my videos for $40"
+      },
+      "vo": "Studio, the app, some scheduling tool. Doesn't matter."
+    },
+    {
+      "type": "dashboard",
+      "page": "overview",
+      "transition": "cut",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "tracking"
+        }
+      ],
+      "beats": {
+        "spot": "@spots"
+      },
+      "notify": {
+        "at": "@emails",
+        "title": "We spotted a change on “My lighting setup”",
+        "text": "New title. Turn it into a 14-day experiment?"
+      },
+      "vo": "A few hours later, Backsurge spots it and emails you, so you can turn it into a proper test."
+    },
+    {
+      "type": "end",
+      "headline": "Every change, spotted.",
+      "vo": "Free at backsurge dot com."
+    }
+  ]
+}

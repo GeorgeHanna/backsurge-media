@@ -1,0 +1,26 @@
+{
+  "id": "teaser",
+  "title": "Teaser, no voice (~9s)",
+  "music": { "track": "pulse", "volume": 0.5 },
+  "captions": false,
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": ["Changed a YouTube title?", "Did it work?"],
+      "accent": [1],
+      "visual": "title-swap",
+      "seconds": 2.6
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "shots": [
+        { "at": 0, "focus": "cardA-table", "enter": "rise" },
+        { "at": 1.7, "focus": "cardA-verdict" }
+      ],
+      "beats": { "click": -2, "ff": 0.3, "verdict": 1.7 },
+      "seconds": 3.2
+    },
+    { "type": "end", "headline": "Know what every change did.", "seconds": 3 }
+  ]
+}

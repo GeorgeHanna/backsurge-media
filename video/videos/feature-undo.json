@@ -1,0 +1,53 @@
+{
+  "id": "feature-undo",
+  "title": "Feature: one-click undo (~12s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "drive",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "New thumbnail.",
+        "Views tanked."
+      ],
+      "accent": [
+        1
+      ],
+      "visual": "views-drop",
+      "vo": "New thumbnail. Views tanked. Now what?"
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardB",
+          "enter": "rise"
+        },
+        {
+          "at": "@One",
+          "focus": "cardB-footer"
+        }
+      ],
+      "beats": {
+        "click": -3,
+        "ff": -2.5,
+        "verdict": -1.5,
+        "revert": "@click"
+      },
+      "vo": "If you made the change in Backsurge, it backed up your original. One click and it's back on YouTube."
+    },
+    {
+      "type": "end",
+      "headline": "Undo, for YouTube.",
+      "vo": "Free at backsurge dot com."
+    }
+  ]
+}

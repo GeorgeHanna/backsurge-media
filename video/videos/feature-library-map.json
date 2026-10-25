@@ -1,0 +1,38 @@
+{
+  "id": "feature-library-map",
+  "title": "Feature: library map (~14s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "chill",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Every video you've made,",
+        "on one map."
+      ],
+      "accent": [
+        1
+      ],
+      "visual": "map",
+      "focus": "hidden_gem",
+      "vo": "Here's every video on a YouTube channel, on one map."
+    },
+    {
+      "type": "map",
+      "focus": "hidden_gem",
+      "focusAt": "@Top",
+      "vo": "Further right, more views per day. Higher up, more likes, comments and shares. Top left are your hidden gems. Loved, but barely found."
+    },
+    {
+      "type": "end",
+      "headline": "See your channel's map.",
+      "vo": "Connect your channel free, at backsurge dot com."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "duration": 28.0,
+  "style": "quirky",
+  "seed": 9,
+  "sections": [
+    {
+      "at": 0.0,
+      "part": "intro"
+    },
+    {
+      "at": 2.33,
+      "part": "silence"
+    },
+    {
+      "at": 4.5,
+      "part": "build"
+    },
+    {
+      "at": 9.17,
+      "part": "drop"
+    },
+    {
+      "at": 22.0,
+      "part": "break"
+    },
+    {
+      "at": 24.67,
+      "part": "outro"
+    }
+  ],
+  "hits": []
+}

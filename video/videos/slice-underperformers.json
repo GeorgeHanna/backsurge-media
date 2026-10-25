@@ -1,0 +1,79 @@
+{
+  "id": "slice-underperformers",
+  "title": "The 4 types, part 3: underperformers (~33s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "chill",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Underperformers",
+      "lines": [
+        "Some YouTube videos",
+        "just don't work."
+      ],
+      "accent": [
+        1
+      ],
+      "visual": "map",
+      "focus": "underperformer",
+      "vo": "Some of your YouTube videos just don't work. And honestly? That's fine."
+    },
+    {
+      "type": "quadrant",
+      "cluster": "underperformer",
+      "meaning": "Few views. Few likes or comments.",
+      "fixes": [
+        {
+          "text": "Still care about the topic?",
+          "at": "@care"
+        },
+        {
+          "text": "Try one new angle",
+          "at": "@angle"
+        },
+        {
+          "text": "Give it 28 days",
+          "at": "@days"
+        }
+      ],
+      "vo": "Bottom left: underperformers. Low views, and the few people who watch don't react much. If you still care about the topic, try one new angle. A different title, a different promise. Then give it twenty-eight days."
+    },
+    {
+      "type": "text",
+      "kicker": "Then",
+      "title": "Nothing moved? Let it go.",
+      "subtitle": "Your time is worth more on your hidden gems.",
+      "vo": "Nothing moved? Let it go. Your time is worth way more on your hidden gems."
+    },
+    {
+      "type": "dashboard",
+      "page": "overview",
+      "highlight": "underperformer",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "map",
+          "enter": "rise"
+        }
+      ],
+      "beats": {
+        "highlight": "@worth"
+      },
+      "vo": "Backsurge sorts your whole library into these four groups, so you can see which ones are worth another shot."
+    },
+    {
+      "type": "end",
+      "headline": "Last one: your stars.",
+      "vo": "Last one's your stars, and why you should leave them alone.",
+      "follow": true,
+      "kicker": "",
+      "cta": "Follow for part 4"
+    }
+  ]
+}

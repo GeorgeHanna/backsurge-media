@@ -1,0 +1,14 @@
+{
+  "duration": 27.0,
+  "style": "drive",
+  "seed": 1,
+  "sections": [
+    { "at": 0, "part": "intro" },
+    { "at": 2.0, "part": "build" },
+    { "at": 8.5, "part": "lift" },
+    { "at": 13.03, "part": "drop" },
+    { "at": 19.5, "part": "break" },
+    { "at": 23.0, "part": "outro" }
+  ],
+  "hits": [0.1, 0.67]
+}

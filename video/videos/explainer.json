@@ -1,0 +1,189 @@
+{
+  "id": "explainer",
+  "title": "How Backsurge works (~40s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "drive",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "You changed your",
+        "YouTube title.",
+        "Did it work?"
+      ],
+      "accent": [
+        2
+      ],
+      "visual": "title-swap",
+      "vo": "You changed your YouTube title. Did it actually work?"
+    },
+    {
+      "type": "text",
+      "title": "Most creators never find out.",
+      "subtitle": "Views go up, views go down. Nobody connects it to the change.",
+      "vo": "Most creators never find out.",
+      "captions": false
+    },
+    {
+      "type": "dashboard",
+      "page": "overview",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "full",
+          "enter": "tilt"
+        },
+        {
+          "at": "@watches",
+          "focus": "map"
+        }
+      ],
+      "beats": {
+        "stats": 0.3,
+        "map": "@watches+0.3"
+      },
+      "vo": "Backsurge connects to your YouTube channel and watches every video for you."
+    },
+    {
+      "type": "dashboard",
+      "page": "overview",
+      "transition": "cut",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "map"
+        },
+        {
+          "at": 0.4,
+          "focus": "tracking"
+        }
+      ],
+      "beats": {
+        "spot": "@spot"
+      },
+      "notify": {
+        "at": "@email",
+        "title": "We spotted a change on “My lighting setup”",
+        "text": "New title. Turn it into a 14-day experiment?"
+      },
+      "vo": "Change a title, thumbnail or description, in Studio or on your phone, and we spot it and email you.",
+      "edit": {
+        "at": "@title",
+        "out": "@spot",
+        "old": "My lighting setup",
+        "new": "How I light my videos for $40"
+      }
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardA-top",
+          "enter": "rise"
+        },
+        {
+          "at": "@one",
+          "focus": "cardA-box"
+        }
+      ],
+      "beats": {
+        "click": "@experiment"
+      },
+      "vo": "One click turns it into an experiment. Seven, fourteen or twenty-eight days."
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "transition": "cut",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardA-box"
+        },
+        {
+          "at": 0.25,
+          "focus": "cardA-table"
+        },
+        {
+          "at": "@winning",
+          "focus": "cardA-verdict"
+        }
+      ],
+      "beats": {
+        "click": -2,
+        "ff": 0.35,
+        "verdict": "@winning"
+      },
+      "vo": "Then you get a straight answer. Views, click-through rate and watch time, before and after. Winning, or losing."
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "transition": "cut",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardA-verdict"
+        },
+        {
+          "at": 0.15,
+          "focus": "cardB-footer"
+        }
+      ],
+      "beats": {
+        "click": -3,
+        "ff": -2.5,
+        "verdict": -1.5,
+        "revert": "@back+0.2"
+      },
+      "vo": "Losing? Put the old version back in one click."
+    },
+    {
+      "type": "dashboard",
+      "page": "video",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "form",
+          "enter": "rise"
+        },
+        {
+          "at": "@track",
+          "focus": "form+history"
+        }
+      ],
+      "beats": {
+        "type": 0.4,
+        "submit": "@track"
+      },
+      "vo": "Or make the change right here, and we'll track it from day one."
+    },
+    {
+      "type": "dashboard",
+      "page": "overview",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "map-plot",
+          "enter": "rise"
+        }
+      ],
+      "beats": {
+        "gems": "@love"
+      },
+      "vo": "And the library map shows the old videos people love, but few find. Your easiest wins."
+    },
+    {
+      "type": "end",
+      "vo": "Backsurge. Start tracking free, at backsurge dot com."
+    }
+  ]
+}

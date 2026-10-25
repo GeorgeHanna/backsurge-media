@@ -1,0 +1,85 @@
+{
+  "id": "slice-stars",
+  "title": "The 4 types, part 4: stars (~30s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "chill",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Stars",
+      "lines": [
+        "Don't touch",
+        "these YouTube videos."
+      ],
+      "accent": [
+        0
+      ],
+      "visual": "map",
+      "focus": "star",
+      "vo": "Whatever you do, don't touch these YouTube videos."
+    },
+    {
+      "type": "quadrant",
+      "cluster": "star",
+      "meaning": "Lots of views. People love them.",
+      "fixes": [
+        {
+          "text": "Leave the title alone",
+          "at": "@Don't"
+        },
+        {
+          "text": "Make a follow-up",
+          "at": "@Make"
+        },
+        {
+          "text": "Link to it from new videos",
+          "at": "@link"
+        }
+      ],
+      "vo": "Top right: your stars. Lots of views, and people love them. It's tempting to freshen up the title. Don't. Make a follow-up instead, and link to the star from your newer videos, in end screens and descriptions."
+    },
+    {
+      "type": "text",
+      "kicker": "Changed one anyway?",
+      "title": "Watch the next two weeks.",
+      "subtitle": "Views dropping? Put the old version back.",
+      "vo": "Already changed one? Watch it for the next two weeks. If views drop, put the old version back."
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardB",
+          "enter": "rise"
+        },
+        {
+          "at": "@one",
+          "focus": "cardB-footer"
+        }
+      ],
+      "beats": {
+        "click": -3,
+        "ff": -2.5,
+        "verdict": -1.5,
+        "revert": "@click"
+      },
+      "vo": "If you made the change in Backsurge, it kept a backup, so that's one click."
+    },
+    {
+      "type": "end",
+      "headline": "That's all 4 types.",
+      "vo": "That's all four. Follow for more stuff like this.",
+      "follow": true,
+      "kicker": "",
+      "cta": "Follow for more"
+    }
+  ]
+}

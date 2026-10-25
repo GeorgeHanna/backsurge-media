@@ -1,0 +1,44 @@
+{
+  "name": "backsurge-video",
+  "private": true,
+  "description": "Backsurge marketing videos, written as code with Remotion. See README.md.",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "audio:setup": "python3 tools/audio.py setup",
+    "audio:sfx": "python3 tools/audio.py sfx",
+    "audio:music": "python3 tools/audio.py music",
+    "prepare-video": "node tools/prepare.mjs",
+    "stills": "node tools/stills.mjs",
+    "preview": "node tools/preview.mjs",
+    "render": "node tools/render.mjs",
+    "posts": "node tools/posts.mjs",
+    "voice:import": "python3 tools/audio.py import",
+    "index-videos": "node tools/index-videos.mjs",
+    "check-cues": "python3 tools/check-cues.py",
+    "check": "tsc --noEmit",
+    "recording-script": "node tools/recording-script.mjs",
+    "music": "node tools/music.mjs",
+    "make": "node tools/make.mjs",
+    "final": "node tools/make.mjs --final",
+    "setup": "bash tools/setup.sh"
+  },
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/inter": "^5.2.5",
+    "@fontsource/caveat": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/vt323": "^5.3.0",
+    "@remotion/cli": "4.0.536",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.536",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.536",
+    "@remotion/renderer": "4.0.536",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}

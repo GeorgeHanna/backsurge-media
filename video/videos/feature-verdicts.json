@@ -1,0 +1,51 @@
+{
+  "id": "feature-verdicts",
+  "title": "Feature: clear verdicts (~15s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "pulse",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Views went up.",
+        "Was it your title?"
+      ],
+      "accent": [
+        1
+      ],
+      "vo": "Views went up. But was it actually your new title?"
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardA-table",
+          "enter": "rise"
+        },
+        {
+          "at": "@winning",
+          "focus": "cardA-verdict"
+        }
+      ],
+      "beats": {
+        "click": -2,
+        "ff": 0.2,
+        "verdict": "@winning"
+      },
+      "vo": "Backsurge shows you more than views. Impressions, click-through rate, watch time, before and after. Then a clear call: winning, losing, or no clear change."
+    },
+    {
+      "type": "end",
+      "headline": "Know what worked.",
+      "vo": "backsurge dot com. Free to start."
+    }
+  ]
+}

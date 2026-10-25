@@ -1,0 +1,141 @@
+{
+  "id": "four-types",
+  "title": "The 4 types of YouTube videos and how to fix each (~45s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "drive",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Every YouTube video",
+        "is one of 4 types."
+      ],
+      "accent": [
+        1
+      ],
+      "visual": "quadrants",
+      "vo": "Every YouTube video is one of four types. Most creators fix the wrong ones."
+    },
+    {
+      "type": "map",
+      "title": "Views × engagement",
+      "vo": "Plot every video by views and engagement, and four groups appear."
+    },
+    {
+      "type": "quadrant",
+      "transition": "cut",
+      "cluster": "star",
+      "meaning": "Lots of views, lots of love.",
+      "fixes": [
+        {
+          "text": "Don't touch it"
+        },
+        {
+          "text": "Make a follow-up"
+        },
+        {
+          "text": "Link to it"
+        }
+      ],
+      "vo": "Stars. Lots of views, lots of love. Don't touch them. Make a follow-up, and link to it."
+    },
+    {
+      "type": "quadrant",
+      "transition": "cut",
+      "cluster": "hidden_gem",
+      "meaning": "Loved, but hard to find.",
+      "fixes": [
+        {
+          "text": "New title"
+        },
+        {
+          "text": "New thumbnail"
+        },
+        {
+          "text": "Words people search"
+        }
+      ],
+      "vo": "Hidden gems. Loved, but hard to find. That's packaging: try a new title or thumbnail, with words people actually search."
+    },
+    {
+      "type": "quadrant",
+      "transition": "cut",
+      "cluster": "wide_reach",
+      "meaning": "Lots of clicks, but people leave early.",
+      "fixes": [
+        {
+          "text": "Cut the slow intro"
+        },
+        {
+          "text": "Deliver the promise fast"
+        },
+        {
+          "text": "Add chapters"
+        }
+      ],
+      "vo": "Wide reach. Lots of clicks, but people leave early. Cut the slow intro, deliver the promise fast, add chapters."
+    },
+    {
+      "type": "quadrant",
+      "transition": "cut",
+      "cluster": "underperformer",
+      "meaning": "Low on both.",
+      "fixes": [
+        {
+          "text": "Try a new angle"
+        },
+        {
+          "text": "Or let it go"
+        }
+      ],
+      "vo": "Underperformers. Low on both. Try a new angle, or let them go and focus on the gems."
+    },
+    {
+      "type": "dashboard",
+      "page": "overview",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "map",
+          "enter": "tilt"
+        }
+      ],
+      "beats": {
+        "map": "@sorts"
+      },
+      "vo": "Backsurge sorts your whole YouTube library into these four groups for you."
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardA-table",
+          "enter": "rise"
+        },
+        {
+          "at": "@worked",
+          "focus": "cardA-verdict"
+        }
+      ],
+      "beats": {
+        "click": -2,
+        "ff": 0.3,
+        "verdict": "@worked"
+      },
+      "vo": "Then it tracks every fix you make, and tells you if it worked."
+    },
+    {
+      "type": "end",
+      "headline": "Find your hidden gems.",
+      "vo": "Find your hidden gems, free, at backsurge dot com."
+    }
+  ]
+}

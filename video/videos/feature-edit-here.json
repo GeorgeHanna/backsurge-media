@@ -1,0 +1,50 @@
+{
+  "id": "feature-edit-here",
+  "title": "Feature: change videos from Backsurge (~11s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "pulse",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Change your YouTube title",
+        "without opening Studio."
+      ],
+      "accent": [
+        1
+      ],
+      "vo": "You can change a YouTube title without even opening Studio."
+    },
+    {
+      "type": "dashboard",
+      "page": "video",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "form",
+          "enter": "rise"
+        },
+        {
+          "at": "@tracking",
+          "focus": "form+history"
+        }
+      ],
+      "beats": {
+        "type": 0.3,
+        "submit": "@live"
+      },
+      "vo": "Type the new one in Backsurge, and it's live on YouTube, with tracking from day one."
+    },
+    {
+      "type": "end",
+      "headline": "Your old YouTube videos aren't done yet.",
+      "vo": "Free at backsurge dot com."
+    }
+  ]
+}

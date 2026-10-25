@@ -1,0 +1,226 @@
+{
+	"id": "search-terms",
+	"title": "YouTube Search Terms: See What Viewers Typed to Find You",
+	"format": "wide",
+	"voice": {
+		"voice": "bm_george",
+		"speed": 1.12,
+		"lang": "en-gb"
+	},
+	"music": {
+		"style": "synthwave",
+		"bpm": 98,
+		"seed": 7
+	},
+	"scenes": [
+		{
+			"vo": "Your YouTube title is a guess. Your viewers already typed the right one. You just never looked.",
+			"lines": [
+				{
+					"kind": "hook",
+					"text": "your YouTube title",
+					"at": 0,
+					"instant": true
+				},
+				{
+					"kind": "hookerr",
+					"text": "is a guess.",
+					"at": "@is"
+				},
+				{
+					"kind": "dim",
+					"text": "viewers already typed the right one.",
+					"at": "@viewers"
+				},
+				{
+					"kind": "err",
+					"text": "[ you never looked ]",
+					"at": "@never"
+				}
+			]
+		},
+		{
+			"vo": "Open YouTube Studio. Go to Content, and pick an old video.",
+			"head": "STEP 1 // find the report",
+			"lines": [
+				{
+					"kind": "cmd",
+					"text": "open studio",
+					"at": "@Open"
+				},
+				{
+					"kind": "out",
+					"text": "Content  >  pick an old video",
+					"at": "@Content"
+				},
+				{
+					"kind": "dim",
+					"text": "  selected: my_camera_setup.mp4   (example)",
+					"at": "@old"
+				}
+			]
+		},
+		{
+			"vo": "Click Analytics, then the Reach tab. Scroll to the card called YouTube search terms.",
+			"head": "STEP 2 // the card nobody opens",
+			"lines": [
+				{
+					"kind": "cmd",
+					"text": "analytics --tab reach",
+					"at": "@Analytics"
+				},
+				{
+					"kind": "dim",
+					"text": "  scrolling...",
+					"at": "@Scroll"
+				},
+				{
+					"kind": "ok",
+					"text": "found card: YouTube search terms",
+					"at": "@search"
+				}
+			]
+		},
+		{
+			"vo": "These are the exact words people typed before they found your video.",
+			"head": "YouTube search terms  //  EXAMPLE DATA",
+			"lines": [
+				{
+					"kind": "table",
+					"text": "SEARCH TERM                         VIEWS",
+					"at": 0.2
+				},
+				{
+					"kind": "row1",
+					"text": "budget camera for youtube            31%",
+					"at": "@exact"
+				},
+				{
+					"kind": "row",
+					"text": "best camera under 500                12%",
+					"at": "@typed"
+				},
+				{
+					"kind": "row",
+					"text": "cheap vlog camera                     6%",
+					"at": "@found"
+				},
+				{
+					"kind": "row",
+					"text": "my camera setup                       2%",
+					"at": "@video"
+				}
+			]
+		},
+		{
+			"vo": "Now hold that list next to your title. If the top phrase isn't in it, there's your problem.",
+			"head": "STEP 3 // compare",
+			"lines": [
+				{
+					"kind": "out",
+					"text": "title:     \"My New Camera Setup\"",
+					"at": "@title"
+				},
+				{
+					"kind": "out",
+					"text": "top term:  \"budget camera for youtube\"",
+					"at": "@top"
+				},
+				{
+					"kind": "errbig",
+					"text": "MISMATCH",
+					"at": "@problem"
+				}
+			]
+		},
+		{
+			"vo": "Put that phrase near the start of the title. Only if the video really delivers it.",
+			"head": "STEP 4 // fix",
+			"lines": [
+				{
+					"kind": "cmd",
+					"text": "rename --title",
+					"at": "@Put"
+				},
+				{
+					"kind": "okbig",
+					"text": "Budget Camera for YouTube: My Setup",
+					"at": "@start"
+				},
+				{
+					"kind": "dim",
+					"text": "  check: does the video deliver it?  yes",
+					"at": "@delivers"
+				}
+			]
+		},
+		{
+			"vo": "Then use that same phrase in the first line of your description. Same words people search for.",
+			"head": "STEP 5 // description",
+			"lines": [
+				{
+					"kind": "cmd",
+					"text": "edit --description",
+					"at": "@Then"
+				},
+				{
+					"kind": "out",
+					"text": "line 1: \"budget camera for youtube, my setup\"",
+					"at": "@first"
+				},
+				{
+					"kind": "ok",
+					"text": "title and description match the search",
+					"at": "@Same"
+				}
+			]
+		},
+		{
+			"vo": "Card empty? That video barely gets search traffic yet. Start with one that does.",
+			"head": "EDGE CASE",
+			"lines": [
+				{
+					"kind": "warn",
+					"text": "warning: card empty",
+					"at": "@empty"
+				},
+				{
+					"kind": "dim",
+					"text": "  not enough search traffic yet",
+					"at": "@search"
+				},
+				{
+					"kind": "out",
+					"text": "skip it. start with a video that has some.",
+					"at": "@Start"
+				}
+			]
+		},
+		{
+			"vo": "Do this for five old videos this week. Change one thing at a time, so you know what worked.",
+			"head": "TODO",
+			"lines": [
+				{
+					"kind": "check",
+					"text": "[ ] 5 old videos",
+					"at": "@five"
+				},
+				{
+					"kind": "check",
+					"text": "[ ] one change at a time",
+					"at": "@one"
+				},
+				{
+					"kind": "check",
+					"text": "[ ] write down what you changed",
+					"at": "@worked"
+				}
+			]
+		},
+		{
+			"vo": "Backsurge dot com keeps that log for you, and shows which change actually moved your views.",
+			"end": true,
+			"seconds": 5
+		}
+	]
+}

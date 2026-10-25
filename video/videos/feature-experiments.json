@@ -1,0 +1,71 @@
+{
+  "id": "feature-experiments",
+  "title": "Feature: experiments (~16s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "drive",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Did that title change",
+        "actually work?"
+      ],
+      "accent": [
+        1
+      ],
+      "visual": "title-swap",
+      "vo": "Did that YouTube title change actually work? Here's how you find out."
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardA-box",
+          "enter": "rise"
+        }
+      ],
+      "beats": {
+        "click": "@fourteen"
+      },
+      "vo": "Pick seven, fourteen or twenty-eight days."
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "transition": "cut",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardA-box"
+        },
+        {
+          "at": 0.3,
+          "focus": "cardA-table"
+        },
+        {
+          "at": "@answer",
+          "focus": "cardA-verdict"
+        }
+      ],
+      "beats": {
+        "click": -2,
+        "ff": 0.4,
+        "verdict": "@answer"
+      },
+      "vo": "Backsurge compares every day after the change with the twenty-eight days before it. Then you get a straight answer."
+    },
+    {
+      "type": "end",
+      "headline": "Stop guessing.",
+      "vo": "Try it free at backsurge dot com."
+    }
+  ]
+}

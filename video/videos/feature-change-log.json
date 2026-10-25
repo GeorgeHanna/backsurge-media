@@ -1,0 +1,47 @@
+{
+  "id": "feature-change-log",
+  "title": "Feature: change log (~16s)",
+  "voice": {
+    "voice": "am_michael",
+    "speed": 1.15
+  },
+  "music": {
+    "track": "drive",
+    "volume": 0.2
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "What did that YouTube title",
+        "say before you changed it?"
+      ],
+      "accent": [
+        1
+      ],
+      "visual": "title-swap",
+      "vo": "Quick. What did that YouTube title say before you changed it?"
+    },
+    {
+      "type": "dashboard",
+      "page": "changes",
+      "shots": [
+        {
+          "at": 0,
+          "focus": "cardA-top",
+          "enter": "rise"
+        },
+        {
+          "at": "@Even",
+          "focus": "full"
+        }
+      ],
+      "vo": "Backsurge logs every title, thumbnail and description change on your channel. Old version, new version. Even the ones you made on your phone at 2am."
+    },
+    {
+      "type": "end",
+      "headline": "Never lose an old title again.",
+      "vo": "It's free at backsurge dot com."
+    }
+  ]
+}
