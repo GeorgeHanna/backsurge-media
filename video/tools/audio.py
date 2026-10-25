@@ -40,7 +40,7 @@ LOCAL_DIRS = [
     Path(p)
     for p in (
         os.environ.get("KOKORO_DIR", ""),
-        str(ROOT.parent.parent.parent / "backsurge-media" / "tts"),
+        str(ROOT.parent / "tts"),
         "/home/claude/backsurge-media/tts",
     )
     if p
